@@ -40,7 +40,7 @@ function getStudent(data, id){
 }
 
 app.get("/", function (request, response) {
-    response.json(students);
+    response.json({data: students});
 });
 
 app.get("/:id", function (request, response) {
